@@ -21,14 +21,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="main.css" type="text/css" />
-<link rel="stylesheet" href="custom.css" type="text/css" />
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="timer.js"></script>
 </head>
 
 <body>
-  <div class="header-container container">
+  <div class="header-container container div">
   <header>
        <ul class="nav">
             <li>
@@ -41,7 +40,7 @@
             <a href="https://github.com/dr-liangma" target="_blank">Github Projects</a>
             </li>
             <li class="active">
-              <a href="timer.html">WFH Timer</a>
+              <a href="https://dr-liangma.github.io/timer.html">WFH Timer</a>
             </li>
       </ul>
   </header>
@@ -50,26 +49,26 @@
 <h1> Periodic Timer for Work from Home</h1>
 <form>
 <div class="div">
-<h3> Valid Period per Day </h3>
-<label for="startTime">Start Time:</label>
-<input type="time" name="startTime" value="08:00" id="startTime">
--->
-<label for="stopTime">Stop Time:</label>
-<input type="time" name="stopTime" value="22:00" id="stopTime"> 
+    <h3> Valid Period per Day </h3>
+    <label for="startTime">Start Time:</label>
+    <input type="time" name="startTime" value="08:00" id="startTime">
+    -->
+    <label for="stopTime">Stop Time:</label>
+    <input type="time" name="stopTime" value="22:00" id="stopTime"> 
 </div>
 <div class="div">
     <div>
-    <h3> Timer Settings </h3>
-    <label for="duration">Timer duration: </label>
-    <input type="number" min="20" max="60" step="5" value="30" name="duration" id="duration"> 
-    <label for="duration">minutes</label>
+        <h3> Timer Settings </h3>
+        <label for="duration">Timer duration: </label>
+        <input type="number" min="20" max="60" step="5" value="30" name="duration" id="duration"> 
+        <label for="duration">minutes</label>
     </div>
     <div
-    <label for="rest">Rest time: </label>
-    <input type="number" min="2" max="20" step="1" value="5" name="rest" id="rest"> 
-    <label for="rest">minutes</label>
+        <label for="rest">Rest time: </label>
+        <input type="number" min="2" max="20" step="1" value="5" name="rest" id="rest"> 
+        <label for="rest">minutes</label>
     </div>
-<input type="button" class="button" id="button" value="Start" onclick="return timer();">
+    <input type="button" class="button" id="button" value="Start" onclick="return timer();">
 </div>
 </form>
 
@@ -78,11 +77,11 @@
 <input type="button" id="reset" class="button" style="display: none" value="Reset Timer" onclick="reset(); return false;">
 </div>
 <audio id="rooster">
-  <source src="rooster.mp3" type="audio/mpeg">
+  <source src="https://dr-liangma.github.io/rooster.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 <audio id="shipbell">
-  <source src="shipbell.mp3" type="audio/mpeg">
+  <source src="https://dr-liangma.github.io/shipbell.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
