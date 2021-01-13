@@ -8,6 +8,10 @@ h3 {
    color: blue;   
 }
 
+p {
+	font-size: 1.20em;
+}
+
 .div {
   text-align: center;
 }
@@ -76,6 +80,11 @@ details p {
 	color: #B03A2E
 }
 
+.container,
+.header-container {
+    margin: 0 auto
+}
+
 p.meta {
 	margin-top: -25px;
 	margin-bottom: 35px;
@@ -128,8 +137,4 @@ p.meta {
 
 .social-media-icons:hover {
 	color: #2382c8;
-}
-
-p.caption {
-	font-size: 0.80em;
 }
