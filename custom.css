@@ -1,15 +1,33 @@
-/* 
-	Link hovers: #2382c8;
+h1 {
+  text-align: center;
+   color: grey;   
+}
 
+h3 {
+   text-align: center;
+   color: blue;   
+}
 
-*/
+.div {
+  text-align: center;
+}
 
+.button {
+padding: 5px 100px;
+color: green;
+background-color: white;
+}
 
-/* General
-每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每每 */
+.timer{
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  color: green;
+}
 
 html {
-	background-color: #fefefe;
+	background-color: #f2f1ed;
 }
 
 header {
