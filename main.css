@@ -20,6 +20,10 @@ margin-top: 10px;
     display: inline-block;
 }
 
+input.invalid {
+  border-color: red;
+}
+
 .button {
 padding: 5px 100px;
 color: green;
