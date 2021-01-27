@@ -74,19 +74,22 @@
 </div>
 </form>
 
-<div class="div" style="display: none" id="display">
+<div class="div">
+<audio id="rooster" src="https://dr-liangma.github.io/rooster.mp3" type="audio/mpeg"></audio>
+
+</div>
+
+<div class="div">
+<audio id="shipbell" src="https://dr-liangma.github.io/shipbell.mp3" type="audio/mpeg"></audio>
+<label><b>Music for break:</b> </label>
+<input type="file" id="restMusic" accept="audio/mpeg">
+</div>
+
+<div class="div" style="display: none" id="display" accept="audio/mpeg">
 <p id="timer" class="timer"></p>
 <input type="button" id="reset" class="button"  value="Reset" onclick="reset(); return false;">
 <input type="button" id="pause" class="button"  value="Pause" onclick="pause(); return false;">
 </div>
-<audio id="rooster">
-  <source src="https://dr-liangma.github.io/rooster.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<audio id="shipbell">
-  <source src="https://dr-liangma.github.io/shipbell.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
 
 
 <div class="social-footer">
@@ -96,6 +99,8 @@
        
     <a href="https://github.com/dr-liangma" class="social-media-icons"><i class="fa fa-2x fa-github-square" aria-hidden="true"></i></a>
   </div><!-- /.main -->
+  
+
 </body>
 
 </html>
