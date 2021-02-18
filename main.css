@@ -7,16 +7,22 @@ h2 {
    color: grey;   
 }
 h3 {
-   text-align: center;
    color: blue;   
 }
-input {
-    
-margin-top: 10px;
+
+input {    
+	margin-top: 10px;
 }
 
-.div {
-  text-align: center;
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+
+.center{
+	text-align: center;
 }
 
 .inline {
@@ -40,10 +46,6 @@ background-color: white;
   margin-bottom: 0px;
   margin-top: 10px;
   color: green;
-}
-
-html {
-	background-color: #f2f1ed;
 }
 
 header {
@@ -71,10 +73,6 @@ li {
 	border-bottom: 1px solid #000;
 }
 
-.center {
-	text-align: center;
-}
-
 *:focus {
 	outline: none;
 }
@@ -83,28 +81,17 @@ summary {
 	cursor: pointer;
 }
 
-details p {
-	margin-left: 1em;
-}
-
 .award {
 	color: #B03A2E
 }
 
-p.meta {
-	margin-top: -25px;
-	margin-bottom: 35px;
-}
-
-
 .portrait{
   border-radius:5px;
   max-width:100%;
-  height:175px;
-  width:175px;
+  height:auto;
+  width:275px;
   position:relative;
   margin:-10px 0 0 15px;
-  float:right
 }
 
 .pagination .social-media-icons {
@@ -132,11 +119,6 @@ p.meta {
 	color: #2382c8;
 }
 
-p.caption {
-	font-size: 0.80em;
-}
-
-
 @font-face {
     font-weight: normal;
     font-style: normal;
@@ -152,6 +134,11 @@ body {
 p {
     color: #222;
     font-size: 19px
+}
+
+label {
+    color: #222;
+    font-size: 19px;
 }
 
 strong {

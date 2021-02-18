@@ -4,19 +4,17 @@
 <meta charset="utf-8">
 <title>Dr.Liang Ma's Timer</title>
 <meta name="author" content="Liang Ma">
-<meta name="description" content="Staff FPGA Design Engineer at Xilinx Inc.">
+<meta name="description" content="Timer for short break after a long time work">
 <meta name="keywords" content="Timer, Work From Home, WFH">
-
-<link rel="shortcut icon" href="favicon.ico">
-<link href="https://fonts.googleapis.com/css?family=Homemade+Apple|PT+Serif" rel="stylesheet">
-
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="shortcut icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Homemade+Apple|PT+Serif" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="timer.js"></script>
 <link rel="stylesheet" href="main.css" type="text/css" />
-
 </head>
 
 <body>
@@ -39,58 +37,63 @@
   </header>
 </div>
 
-<h1> Work From Home </h1>
-<h2> Remember to have a break </h2>
-<form>
-<div class="div">
-    <h3> Valid Period per Day </h3>
-    <label for="startTime">Start Time:</label>
-    <input type="time" name="startTime" value="08:00" id="startTime">
-    <br>
-    <label for="stopTime">Stop Time:</label>
-    <input type="time" name="stopTime" value="20:00" id="stopTime"> 
+<div class="container">
+	<div class="jumbotron">
+		<h1> Work From Home </h1>
+		<h2> Remember to have a break </h2>
+	</div>
+	
+	<div class ="row">
+		<div class="col-sm-6">
+			<h3> Valid Period Per Day </h3>
+			<div class="row">
+				<label for="startTime">Start Time:</label>
+				<input type="time" name="startTime" value="08:00" id="startTime">
+			</div>
+			<div class="row">
+				<label for="stopTime">Stop Time:</label>
+				<input type="time" name="stopTime" value="20:00" id="stopTime"> 
+			</div>
+		</div>
+		<div class="div col-sm-6 right">
+			<h3> Timer Settings </h3>	
+			<div class="row">
+				<label for="duration">Timer: </label>
+				<input type="number" min="15" max="120" step="5" value="30" name="duration" id="duration"> 
+				<label for="duration">minutes</label>
+			</div>
+			<div class="row">
+				<label for="rest">Rest time: </label>
+				<input type="number" min="1" max="20" step="1" value="1" name="rest" id="rest"> 
+				<label for="rest">minutes</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-4">
+			<audio id="rooster" src="https://dr-liangma.github.io/rooster.mp3" type="audio/mpeg"></audio>
+			<audio id="shipbell" src="https://dr-liangma.github.io/shipbell.mp3" type="audio/mpeg"></audio>
+			<label><b>Music for break:</b></label>
+			<input type="file" id="restMusic" accept="audio/mpeg">
+		</div>
+	</div>
+	<div class="center">
+		<input type="button" class="button" id="button" value="Start" onclick="return timer();">
+	</div>
+		<div class="center" style="display: none" id="display" accept="audio/mpeg">
+		<p id="timer" class="timer"></p>
+		<input type="button" id="reset" class="button"  value="Reset" onclick="reset(); return false;">
+		<input type="button" id="pause" class="button"  value="Pause" onclick="pause(); return false;">
+	</div>
+	
 </div>
-<div class="div">
-    <div>
-        <h3> Timer Settings </h3>
-        <label for="duration">Timer duration: </label>
-        <input type="number" min="15" max="120" step="5" value="30" name="duration" id="duration"> 
-        <label for="duration">minutes</label>
-    </div>
-    <div
-        <label for="rest">Rest time: </label>
-        <input type="number" min="1" max="20" step="1" value="1" name="rest" id="rest"> 
-        <label for="rest">minutes</label>
-    </div>
-    <input type="button" class="button" id="button" value="Start" onclick="return timer();">
-</div>
-</form>
-
-<div class="div">
-<audio id="rooster" src="https://dr-liangma.github.io/rooster.mp3" type="audio/mpeg"></audio>
-
-</div>
-
-<div class="div">
-<audio id="shipbell" src="https://dr-liangma.github.io/shipbell.mp3" type="audio/mpeg"></audio>
-<label><b>Music for break:</b> </label>
-<input type="file" id="restMusic" accept="audio/mpeg">
-</div>
-
-<div class="div" style="display: none" id="display" accept="audio/mpeg">
-<p id="timer" class="timer"></p>
-<input type="button" id="reset" class="button"  value="Reset" onclick="reset(); return false;">
-<input type="button" id="pause" class="button"  value="Pause" onclick="pause(); return false;">
-</div>
-
-
 <div class="social-footer">
     <a href="https://www.linkedin.com/in/dr-liangma" class="social-media-icons"><i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i></a>
   
     <a href="mailto:liangm@xilinx.com" class="social-media-icons"><i class="fa fa-2x fa-envelope-square" aria-hidden="true"></i></a>
        
     <a href="https://github.com/dr-liangma" class="social-media-icons"><i class="fa fa-2x fa-github-square" aria-hidden="true"></i></a>
-  </div><!-- /.main -->
+</div><!-- /.main -->
   
 
 </body>
