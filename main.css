@@ -45,11 +45,12 @@ input.invalid {
 }
 
 .button {
-padding: 1px 60px;
-color: #ff577b;
+border-radius: 25px;
+padding: 1px 50px;
+color: white;
 margin-top: 10px;
 font-size: 20px;
-background-color: #ffdfdb;
+background-color: #e67067;
 }
 
 .timer{
