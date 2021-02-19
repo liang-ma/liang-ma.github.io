@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Work From Home Timer</title>
+	<title>Focus&Break Timer</title>
 	<meta name="author" content="Liang Ma">
-	<meta name="description" content="Timer for short break after a long time work">
-	<meta name="keywords" content="Timer, Work From Home, WFH">
+	<meta name="description" content="Timer for short break after focus on work">
+	<meta name="keywords" content="Timer, Work From Home, WFH, Focus, Break">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -26,7 +26,7 @@
             </li>
             
             <li class="active">
-              <a href="https://dr-liangma.github.io/timer.html">WFH-Timer</a>
+              <a href="https://dr-liangma.github.io/timer.html">F&B Timer</a>
             </li>
             
             <li >
@@ -40,7 +40,7 @@
 <div class="container">
 	<div class="jumbotron">
 		<h1> Work From Home </h1>
-		<h2> Remember to have a break </h2>
+		<h2> Try this <b>Focus and Break Timer </b></h2>
 	</div>
 	
 	<div class ="row">
@@ -69,17 +69,19 @@
 			</div>
 		</div>
 	</div>
+	<div class="center">
+		<input type="button" class="button" id="button" value="Start" onclick="return timer();">
+	</div>
 	<div class="row">
 		<audio id="rooster" src="https://dr-liangma.github.io/rooster.mp3" type="audio/mpeg"></audio>
-		<div class="col-sm-4 col-sm-offset-5">		
+		<div class="center">
 			<audio id="shipbell" src="https://dr-liangma.github.io/shipbell.mp3" type="audio/mpeg"></audio>
-			<label><b>Music for break:</b></label>
-			<input type="file" id="restMusic" accept="audio/mpeg">
+			<label class=".file-upload" for="restMusic"><i class="fa fa-music"></i> Customize Break Music</label>
+			<input type="file" style="display: none" id="restMusic" accept="audio/mpeg" class="inline" />
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2 div" style="background-color:#ccffe7;">
-			<input type="button" class="button" id="button" value="Start" onclick="return timer();">
 			<div class="" style="display: none" id="display" accept="audio/mpeg">
 			<p id="timer" class="timer"></p>
 			<input type="button" id="pause" class="button"  value="Pause" onclick="pause(); return false;">

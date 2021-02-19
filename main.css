@@ -19,7 +19,12 @@ input {
 	text-align: center;
 	background-color: #cae7fc;
 }
-
+.file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
 .right {
   text-align: right;
 }
