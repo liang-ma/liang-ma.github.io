@@ -44,7 +44,7 @@
 	</div>
 	
 	<div class ="row">
-		<div class="col-sm-4 col-sm-offset-2 div">
+		<div class="col-sm-4 col-sm-offset-1 div">
 			<h3> Daily Valid Period </h3>
 			<div class="row">
 				<label for="startTime">Start Time:</label>
@@ -55,7 +55,7 @@
 				<input type="time" name="stopTime" value="20:00" id="stopTime"> 
 			</div>
 		</div>
-		<div class="div col-sm-4">
+		<div class="div col-sm-4 col-sm-offset-2">
 			<h3> Timer Settings </h3>	
 			<div class="row">
 				<label for="duration">Focus: </label>
@@ -77,15 +77,16 @@
 			<input type="file" id="restMusic" accept="audio/mpeg">
 		</div>
 	</div>
-	<div class="center">
-		<input type="button" class="button" id="button" value="Start" onclick="return timer();">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2 div" style="background-color:#ccffe7;">
+			<input type="button" class="button" id="button" value="Start" onclick="return timer();">
+			<div class="" style="display: none" id="display" accept="audio/mpeg">
+			<p id="timer" class="timer"></p>
+			<input type="button" id="pause" class="button"  value="Pause" onclick="pause(); return false;">
+			<input type="button" id="reset" class="button"  value="Reset" onclick="reset(); return false;">
+			</div>
+		</div>
 	</div>
-		<div class="col-sm-8 col-sm-offset-2 div" style="display: none" id="display" accept="audio/mpeg">
-		<p id="timer" class="timer"></p>
-		<input type="button" id="pause" class="button"  value="Pause" onclick="pause(); return false;">
-		<input type="button" id="reset" class="button"  value="Reset" onclick="reset(); return false;">
-	</div>
-	
 </div>
 <div class="social-footer">
     <a href="https://www.linkedin.com/in/dr-liangma" class="social-media-icons"><i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i></a>
