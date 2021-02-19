@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <div class="header-container container div">
+  <div class="header-container container">
   <header>
        <ul class="nav">
             <li>
@@ -44,8 +44,8 @@
 	</div>
 	
 	<div class ="row">
-		<div class="col-sm-4 col-sm-offset-2">
-			<h3> Valid Period </h3>
+		<div class="col-sm-4 col-sm-offset-2 div">
+			<h3> Daily Valid Period </h3>
 			<div class="row">
 				<label for="startTime">Start Time:</label>
 				<input type="time" name="startTime" value="08:00" id="startTime">
@@ -55,15 +55,15 @@
 				<input type="time" name="stopTime" value="20:00" id="stopTime"> 
 			</div>
 		</div>
-		<div class="div col-sm-4 right">
+		<div class="div col-sm-4">
 			<h3> Timer Settings </h3>	
 			<div class="row">
-				<label for="duration">Timer: </label>
+				<label for="duration">Focus: </label>
 				<input type="number" min="15" max="120" step="5" value="30" name="duration" id="duration"> 
 				<label for="duration">min</label>
 			</div>
 			<div class="row">
-				<label for="rest">Rest time: </label>
+				<label for="rest">Break: </label>
 				<input type="number" min="1" max="20" step="1" value="1" name="rest" id="rest"> 
 				<label for="rest">min</label>
 			</div>
@@ -80,10 +80,10 @@
 	<div class="center">
 		<input type="button" class="button" id="button" value="Start" onclick="return timer();">
 	</div>
-		<div class="center" style="display: none" id="display" accept="audio/mpeg">
+		<div class="col-sm-8 col-sm-offset-2 div" style="display: none" id="display" accept="audio/mpeg">
 		<p id="timer" class="timer"></p>
-		<input type="button" id="reset" class="button"  value="Reset" onclick="reset(); return false;">
 		<input type="button" id="pause" class="button"  value="Pause" onclick="pause(); return false;">
+		<input type="button" id="reset" class="button"  value="Reset" onclick="reset(); return false;">
 	</div>
 	
 </div>
